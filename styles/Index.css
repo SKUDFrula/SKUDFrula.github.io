@@ -39,11 +39,20 @@
         justify-content: center;
         width: 100%;
         height: 94px;
-        background-color: aqua;
         bottom: 32px;
+    }
+    .introSing {
+        background-color: rgb(255, 82, 65);
+    }
+    .introAct {
+        background-color: #04498e;
+    }
+    .introDance {
+        background-color: rgb(168, 219, 198);
     }
     .introBlock h2{
         text-align: center;
+        color: var(--white);
     }
 }
 @media (min-width:1100px) {/* for desktop*/
@@ -70,11 +79,20 @@
         justify-content: center;
         width: 100%;
         height: 94px;
-        background-color: aqua;
         bottom: 32px;
     }
     .introBlock h2{
         text-align: center;
+        color: var(--white);
+    }
+    .introSing {
+        background-color: rgb(255, 82, 65);
+    }
+    .introAct {
+        background-color: #04498e;
+    }
+    .introDance {
+        background-color: rgb(168, 219, 198);
     }
     .about {
         grid-column: 4/6;
