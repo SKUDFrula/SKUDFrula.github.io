@@ -50,6 +50,7 @@ p {
 }
 .aboutUsImages img {
     padding: 2px;
+    padding-bottom: 20px;
 }
 .aboutUSText {
     grid-column: 2;
