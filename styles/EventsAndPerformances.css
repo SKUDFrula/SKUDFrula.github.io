@@ -1,7 +1,7 @@
 main {
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
-    grid-template-rows: auto auto auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
     justify-content: center;
     align-items: center;
     width: 80%;
@@ -127,7 +127,8 @@ img {
 }
 .travel {
   grid-row: 4;
-  height: 120%;
+  height: 100%;
+  padding-bottom: 10%;
 }
 .text {
   color: black;
@@ -135,4 +136,9 @@ img {
   padding: 8px 12px;
   width: 100%;
   text-align: center;
+}
+.SrbijaVideo {
+  grid-row: 5;
+  align-items: center;
+  justify-content: center;
 }
