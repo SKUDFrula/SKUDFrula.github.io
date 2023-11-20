@@ -55,7 +55,9 @@ img{
     font-size: 24px;
     height: 75px;
     background-color: rgba(201, 199, 199, 0.4);
-    margin: 0px 30px 0px 10px;
+    margin: 0px 0px 0px 0px;
+    padding-inline-start: 10px;
+    padding-inline-end: 10px;
 }
 .pageLinks li {
     height:fit-content;
@@ -63,12 +65,11 @@ img{
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
 }
 .pageLinks li a {
     width:fit-content;
-    
+    white-space: nowrap;
 }
 .pageLinks li:hover {
     background-color: gray;
@@ -138,7 +139,7 @@ footer {
     background-color: var(--gray);
     width: 100%;
 }
-@media (max-width: 1100px) {
+@media (max-width: 1100px) { /*for tablet*/
     .normalMenu {
         display: none;
     }
@@ -162,7 +163,7 @@ footer {
         right: 20px;
     }
 }
-@media (min-width:1100px) {
+@media (min-width:1100px) { /*for desktop*/
     
     #container-2 {
         grid-row: 2;

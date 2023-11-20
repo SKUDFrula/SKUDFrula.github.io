@@ -6,19 +6,12 @@ main {
     align-items: center;
     width: 80%;
 }
-.intro {
-    grid-row: 1;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
+
 .introBlocks {
     margin: 20px 10px 20px 10px;
     color: #f1f1f1;
 }
-.yearEndConcertIntro {
-  background-color: #FF5241;
-  margin-left: 40px;
-}
+
 .yearEndConcertIntro h2, .serbianFestivalIntro h2, .travelsIntro h2 , .yearEndConcertIntro p, .serbianFestivalIntro p, .travelsIntro p {
     margin: 20px;
 }
@@ -33,20 +26,14 @@ h2 {
   margin-bottom: 30px;
   text-align:center
 }
+.yearEndConcertIntro {
+  background-color: #FF5241;
+}
 .serbianFestivalIntro {
     background-color: #04498e;
-    margin-left: 30px;
-    margin-right: 30px;
 }
 .travelsIntro {
     background-color: #A8DBC6;
-    margin-right: 40px;
-
-}
-.yearEndConcert {
-    grid-row: 2;
-    display: grid;
-    grid-template-columns: 50% 50%;
 }
 * {box-sizing: border-box}
 .mySlides1, .mySlides2, .mySlides3, .mySlides4 {
@@ -68,25 +55,6 @@ img {
   object-fit: cover;
 }
 
-.yearEndConcert h2 {
-  grid-column: 1/3;
-}
-
-.yearEndConcert2016Intro {
-  grid-column: 1;
-}
-
-.yearEndConcert2019Intro {
-  grid-column: 2;
-}
-
-.container1 {
-  grid-column: 1;
-}
-
-.container2 {
-  grid-column: 2;
-}
 
 /* Slideshow container */
 .slideshow-container {
@@ -124,8 +92,11 @@ img {
 }
 .serbFests {
   grid-row: 3;
+  display: grid;
+  align-items: center;
 }
 .travel {
+  display: grid;
   grid-row: 4;
   height: 100%;
   padding-bottom: 10%;
@@ -141,4 +112,80 @@ img {
   grid-row: 5;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 850px) { /*for mobile*/
+  .intro {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .yearEndConcertIntro {
+    background-color: #FF5241;
+    grid-row: 1;
+  }
+  .serbianFestivalIntro {
+      background-color: #04498e;
+      grid-row: 2;
+  }
+  .travelsIntro {
+      background-color: #A8DBC6;
+      grid-row: 3;
+  }
+  
+}
+@media (min-width: 850px) { /*for tablet*/
+  .yearEndConcert {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
+  .yearEndConcert h2 {
+    grid-row: 1;
+  }
+  
+  .container1 {
+    grid-row: 2;
+  }
+  
+  .container2 {
+    grid-row: 3;
+  }
+  .mySlides3, .mySlides4 {
+    height: 400px;
+    width: 600px;
+  }
+  .intro {
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+}
+@media (min-width:1500px) { /*for desktop*/
+  .yearEndConcert {
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+  .yearEndConcert h2 {
+    grid-column: 1/3;
+    grid-row: 1;
+  }
+  
+  .container1 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .container2 {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  .mySlides3, .mySlides4 {
+    height: 600px;
+    width: 1000px;
+  }
 }
