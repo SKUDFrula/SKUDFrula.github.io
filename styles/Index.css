@@ -156,18 +156,18 @@
         align-items: center;
     }
     .joinUsTitle {
-        background-image: url("../images/Hungarian_floral_pattern.svg");
+        background-color: rgb(255, 82, 65);
         object-fit: cover;
         background-position-x: 50px;
         background-position-y: 220px;
     }
     .ourMissionTitle {
-        background-image: url("../images/flower_petals_pattern.svg");
+        background-color: #04498e;
         background-size: 150%;
         object-fit: cover;
     }
     .currentProjectsTitle {
-        background-image: url("../images/knit_decor_pattern.svg");
+        background-color: rgb(168, 219, 198);
         background-position: absolute;
         background-size: 50%;
         background-position-y: -325px;
@@ -200,7 +200,7 @@
     }
     .title {
         color: var(--white);
-        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: black;
     }
     .ourPracticeSpace {
